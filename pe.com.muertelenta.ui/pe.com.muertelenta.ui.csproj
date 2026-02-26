@@ -1,0 +1,324 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5CD0793-C345-4A2B-8917-B430671DF291}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pe.com.muertelenta.ui</RootNamespace>
+    <AssemblyName>pe.com.muertelenta.ui</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44330</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cliente\frmcliente.aspx" />
+    <Content Include="cliente\frmhabilitarcliente.aspx" />
+    <Content Include="distrito\frmdistrito.aspx" />
+    <Content Include="distrito\frmhabilitardistrito.aspx" />
+    <Content Include="empleado\frmempleado.aspx" />
+    <Content Include="empleado\frmhabilitarempleado.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
+    <Content Include="plato\frmhabilitarplato.aspx" />
+    <Content Include="plato\frmplato.aspx" />
+    <Content Include="refrigerableplato\frmhabilitarrefrigerableplato.aspx" />
+    <Content Include="refrigerableplato\frmrefrigerableplato.aspx" />
+    <Content Include="rol\frmhabilitarrol.aspx" />
+    <Content Include="rol\frmrol.aspx" />
+    <Content Include="sexo\frmhabilitarsexo.aspx" />
+    <Content Include="sexo\frmsexo.aspx" />
+    <Content Include="pedido\frmlistarpedido.aspx" />
+    <Content Include="pedido\frmregistrarpedido.aspx" />
+    <Content Include="tipodocumento\frmhabilitartipodocumento.aspx" />
+    <Content Include="tipodocumento\frmtipodocumento.aspx" />
+    <Content Include="tipoplato\frmhabilitartipoplato.aspx" />
+    <Content Include="tipoplato\frmtipoplato.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cliente\frmcliente.aspx.cs">
+      <DependentUpon>frmcliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cliente\frmcliente.aspx.designer.cs">
+      <DependentUpon>frmcliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cliente\frmhabilitarcliente.aspx.cs">
+      <DependentUpon>frmhabilitarcliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cliente\frmhabilitarcliente.aspx.designer.cs">
+      <DependentUpon>frmhabilitarcliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="distrito\frmdistrito.aspx.cs">
+      <DependentUpon>frmdistrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="distrito\frmdistrito.aspx.designer.cs">
+      <DependentUpon>frmdistrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="distrito\frmhabilitardistrito.aspx.cs">
+      <DependentUpon>frmhabilitardistrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="distrito\frmhabilitardistrito.aspx.designer.cs">
+      <DependentUpon>frmhabilitardistrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="empleado\frmempleado.aspx.cs">
+      <DependentUpon>frmempleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="empleado\frmempleado.aspx.designer.cs">
+      <DependentUpon>frmempleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="empleado\frmhabilitarempleado.aspx.cs">
+      <DependentUpon>frmhabilitarempleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="empleado\frmhabilitarempleado.aspx.designer.cs">
+      <DependentUpon>frmhabilitarempleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plantilla.Master.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plantilla.Master.designer.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+    </Compile>
+    <Compile Include="plato\frmhabilitarplato.aspx.cs">
+      <DependentUpon>frmhabilitarplato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plato\frmhabilitarplato.aspx.designer.cs">
+      <DependentUpon>frmhabilitarplato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="plato\frmplato.aspx.cs">
+      <DependentUpon>frmplato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plato\frmplato.aspx.designer.cs">
+      <DependentUpon>frmplato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="refrigerableplato\frmhabilitarrefrigerableplato.aspx.cs">
+      <DependentUpon>frmhabilitarrefrigerableplato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="refrigerableplato\frmhabilitarrefrigerableplato.aspx.designer.cs">
+      <DependentUpon>frmhabilitarrefrigerableplato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="refrigerableplato\frmrefrigerableplato.aspx.cs">
+      <DependentUpon>frmrefrigerableplato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="refrigerableplato\frmrefrigerableplato.aspx.designer.cs">
+      <DependentUpon>frmrefrigerableplato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rol\frmhabilitarrol.aspx.cs">
+      <DependentUpon>frmhabilitarrol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rol\frmhabilitarrol.aspx.designer.cs">
+      <DependentUpon>frmhabilitarrol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rol\frmrol.aspx.cs">
+      <DependentUpon>frmrol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rol\frmrol.aspx.designer.cs">
+      <DependentUpon>frmrol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sexo\frmhabilitarsexo.aspx.cs">
+      <DependentUpon>frmhabilitarsexo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sexo\frmhabilitarsexo.aspx.designer.cs">
+      <DependentUpon>frmhabilitarsexo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sexo\frmsexo.aspx.cs">
+      <DependentUpon>frmsexo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sexo\frmsexo.aspx.designer.cs">
+      <DependentUpon>frmsexo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\EmpleadoDALTest.cs" />
+    <Compile Include="test\RefrigerablePlatoDALTest.cs" />
+    <Compile Include="test\SexoDALTest.cs" />
+    <Compile Include="test\TipoDocumentoDALTest.cs" />
+    <Compile Include="test\PlatoDALTest.cs" />
+    <Compile Include="test\DistritoDALTest.cs" />
+    <Compile Include="test\TipoPlatoDALTest.cs" />
+    <Compile Include="test\ConexionTest.cs" />
+    <Compile Include="pedido\frmlistarpedido.aspx.cs">
+      <DependentUpon>frmlistarpedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pedido\frmlistarpedido.aspx.designer.cs">
+      <DependentUpon>frmlistarpedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pedido\frmregistrarpedido.aspx.cs">
+      <DependentUpon>frmregistrarpedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pedido\frmregistrarpedido.aspx.designer.cs">
+      <DependentUpon>frmregistrarpedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tipodocumento\frmhabilitartipodocumento.aspx.cs">
+      <DependentUpon>frmhabilitartipodocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tipodocumento\frmhabilitartipodocumento.aspx.designer.cs">
+      <DependentUpon>frmhabilitartipodocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tipodocumento\frmtipodocumento.aspx.cs">
+      <DependentUpon>frmtipodocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tipodocumento\frmtipodocumento.aspx.designer.cs">
+      <DependentUpon>frmtipodocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tipoplato\frmhabilitartipoplato.aspx.cs">
+      <DependentUpon>frmhabilitartipoplato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tipoplato\frmhabilitartipoplato.aspx.designer.cs">
+      <DependentUpon>frmhabilitartipoplato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tipoplato\frmtipoplato.aspx.cs">
+      <DependentUpon>frmtipoplato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tipoplato\frmtipoplato.aspx.designer.cs">
+      <DependentUpon>frmtipoplato.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Plantilla.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pe.com.muertelenta.bo\pe.com.muertelenta.bo.csproj">
+      <Project>{5d5145ed-b7b9-4e4c-8ec1-1882043c4ba9}</Project>
+      <Name>pe.com.muertelenta.bo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\pe.com.muertelenta.dal\pe.com.muertelenta.dal.csproj">
+      <Project>{c9546a01-dd49-4423-aed8-3655212d7bf6}</Project>
+      <Name>pe.com.muertelenta.dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55793</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44330/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
